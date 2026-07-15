@@ -82,6 +82,55 @@ The following analyses were performed:
 - Outlier Detection
 
 ---
+## Exploratory Data Analysis
+
+The following analyses were performed:
+
+- Risk Distribution
+- Age Distribution
+- Credit Amount Distribution
+- Loan Duration Distribution
+- Gender Distribution
+- Housing Status
+- Loan Purpose
+- Risk by Gender
+- Risk by Housing
+- Risk by Job
+- Risk by Loan Purpose
+- Saving Accounts vs Risk
+- Checking Accounts vs Risk
+- Correlation Analysis
+- Outlier Detection
+
+---
+
+## Project Visualizations
+
+### Risk Distribution
+
+![Risk Distribution](images/risk_distribution.png)
+
+### Age Distribution
+
+![Age Distribution](images/age_distribution.png)
+
+### Credit Amount Distribution
+
+![Credit Amount Distribution](images/credit_amount_distribution.png)
+
+### Feature Importance
+
+![Feature Importance](images/feature_importance.png)
+
+---
+
+## Machine Learning Models
+
+The following classification algorithms were evaluated:
+
+- Logistic Regression
+- Decision Tree
+- Random Forest
 
 ## Machine Learning Models
 
