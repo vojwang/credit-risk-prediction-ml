@@ -113,7 +113,7 @@ streamlit run app/app.py
 
 GitHub: https://github.com/vojwang
 
-LinkedIn: www.linkedin.com/in/victor-ojwang-63116626a
+LinkedIn: https://www.linkedin.com/in/victor-ojwang
 
 ---
 
