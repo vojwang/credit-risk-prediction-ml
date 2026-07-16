@@ -1,13 +1,12 @@
 import streamlit as st
 import pandas as pd
 import joblib
-
 # Load trained model
-model = joblib.load("../models/credit_risk_random_forest.pkl")
+model = joblib.load("models/credit_risk_random_forest.pkl")
 
 # Load saved encoders
-encoders = joblib.load("../models/label_encoders.pkl")
 
+encoders = joblib.load("models/label_encoders.pkl")
 # Page Configuration
 st.set_page_config(
     page_title="Credit Risk Prediction",
