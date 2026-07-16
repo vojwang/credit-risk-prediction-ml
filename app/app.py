@@ -14,14 +14,36 @@ st.set_page_config(
     layout="centered"
 )
 
+# Sidebar
+st.sidebar.title("Project Information")
+
+st.sidebar.markdown("""
+### Model
+
+- Random Forest Classifier
+
+### Performance
+
+- Accuracy: **74.5%**
+- ROC-AUC: **0.747**
+
+### Dataset
+
+German Credit Dataset
+
+### Author
+
+Victor Ojwang
+""")
+
 # Application Title
-st.title("🏦 Credit Risk Prediction System")
+st.title("🏦 German Credit Risk Prediction using Machine Learning")
 
 # Introduction
+
 st.write("""
-This application uses a **Random Forest Machine Learning Model**
-to predict whether a customer is likely to be a **Good** or **Bad**
-credit risk.
+This application predicts whether a customer is likely to be a **Good** or **Bad Credit Risk**
+using a **Random Forest Machine Learning Model** trained on the **German Credit Dataset**.
 """)
 
 # Customer Information
@@ -42,12 +64,19 @@ sex = st.selectbox(
 )
 
 # Job
-job = st.selectbox(
+job_options = {
+    "Unskilled (Non-resident)": 0,
+    "Unskilled (Resident)": 1,
+    "Skilled Employee": 2,
+    "Highly Skilled / Management": 3
+}
+
+job_label = st.selectbox(
     "Job",
-    [0, 1, 2, 3]
+    list(job_options.keys())
 )
 
-# Housing
+job = job_options[job_label]# Housing
 housing = st.selectbox(
     "Housing",
     ["own", "rent", "free"]
@@ -148,3 +177,13 @@ if predict_button:
     st.subheader("Prediction Probabilities")
     st.write(f"✅ Good Credit Risk: **{good_prob:.2f}%**")
     st.write(f"❌ Bad Credit Risk: **{bad_prob:.2f}%**")
+
+st.markdown("---")
+
+st.markdown(
+    """
+    **Developed by Victor Ojwang**
+
+    GitHub: https://github.com/vojwang
+    """
+)
