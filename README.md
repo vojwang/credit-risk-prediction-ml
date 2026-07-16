@@ -5,6 +5,10 @@
 
 https://vojwang-credit-risk-prediction.streamlit.app/
 
+## 📸 Application Preview
+
+![Application Preview](images/app_demo.png)
+
 ## Project Overview
 
 Financial institutions must accurately assess the creditworthiness of loan applicants to minimize defaults and maximize profitability. This project develops a machine learning model that predicts whether a customer represents a **good** or **bad** credit risk using the German Credit dataset.
