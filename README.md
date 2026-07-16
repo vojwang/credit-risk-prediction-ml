@@ -1,225 +1,80 @@
-# Credit Risk Prediction Using Machine Learning
+# 🏦 German Credit Risk Prediction using Machine Learning
+
 ## 🚀 Live Demo
 
-**Try the application here:**
+👉 **Try the application here:**
 
 https://vojwang-credit-risk-prediction.streamlit.app/
+
+---
 
 ## 📸 Application Preview
 
 ![Application Preview](images/app_demo.png)
 
-## Project Overview
+---
 
-Financial institutions must accurately assess the creditworthiness of loan applicants to minimize defaults and maximize profitability. This project develops a machine learning model that predicts whether a customer represents a **good** or **bad** credit risk using the German Credit dataset.
+## 📖 Project Overview
 
-The project demonstrates the complete machine learning workflow from data exploration to model evaluation and feature importance analysis.
+This project predicts whether a customer is likely to be a **Good Credit Risk** or **Bad Credit Risk** using a **Random Forest Machine Learning model** trained on the German Credit Dataset.
+
+The application is deployed using **Streamlit Community Cloud**, allowing users to make predictions through an interactive web interface.
 
 ---
 
-## Business Problem
+## 🎯 Features
 
-Incorrect lending decisions can lead to financial losses due to loan defaults.
-
-The objective of this project is to build a predictive model that helps financial institutions:
-
-- Identify high-risk applicants
-- Reduce credit losses
-- Improve loan approval decisions
-- Support data-driven credit risk assessment
-
----
-
-## Dataset
-
-**Dataset:** German Credit Dataset
-
-The dataset contains **1,000 loan applicants** with demographic and financial information.
-
-### Features
-
-- Age
-- Sex
-- Job
-- Housing
-- Saving Accounts
-- Checking Account
-- Credit Amount
-- Loan Duration
-- Loan Purpose
-
-### Target Variable
-
-- Good Credit Risk
-- Bad Credit Risk
+- Data Cleaning and Preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Logistic Regression Model
+- Decision Tree Model
+- Random Forest Model
+- Model Evaluation
+- Feature Importance Visualization
+- Streamlit Web Application
+- Cloud Deployment
 
 ---
 
-## Project Workflow
+## 📊 Model Performance
 
-1. Data Collection
-2. Data Understanding
-3. Exploratory Data Analysis (EDA)
-4. Data Cleaning
-5. Feature Engineering
-6. Data Preprocessing
-7. Model Training
-8. Model Evaluation
-9. Feature Importance Analysis
-10. Model Saving
+| Metric | Value |
+|---------|--------|
+| Best Model | Random Forest |
+| Accuracy | **74.5%** |
+| ROC-AUC | **0.747** |
 
 ---
 
-## Exploratory Data Analysis
-
-The following analyses were performed:
-
-- Risk Distribution
-- Age Distribution
-- Credit Amount Distribution
-- Loan Duration Distribution
-- Gender Distribution
-- Housing Status
-- Loan Purpose
-- Risk by Gender
-- Risk by Housing
-- Risk by Job
-- Risk by Loan Purpose
-- Saving Accounts vs Risk
-- Checking Accounts vs Risk
-- Correlation Analysis
-- Outlier Detection
-
----
-## Exploratory Data Analysis
-
-The following analyses were performed:
-
-- Risk Distribution
-- Age Distribution
-- Credit Amount Distribution
-- Loan Duration Distribution
-- Gender Distribution
-- Housing Status
-- Loan Purpose
-- Risk by Gender
-- Risk by Housing
-- Risk by Job
-- Risk by Loan Purpose
-- Saving Accounts vs Risk
-- Checking Accounts vs Risk
-- Correlation Analysis
-- Outlier Detection
-
----
-
-## Project Visualizations
-
-### Risk Distribution
-
-![Risk Distribution](images/risk_distribution.png)
-
-### Age Distribution
-
-![Age Distribution](images/age_distribution.png)
-
-### Credit Amount Distribution
-
-![Credit Amount Distribution](images/credit_amount_distribution.png)
-
-### Feature Importance
-
-![Feature Importance](images/feature_importance.png)
-
----
-
-## Machine Learning Models
-
-The following classification algorithms were evaluated:
-
-- Logistic Regression
-- Decision Tree
-- Random Forest
-
-## Machine Learning Models
-
-The following classification algorithms were evaluated:
-
-- Logistic Regression
-- Decision Tree
-- Random Forest
-
----
-
-## Model Performance
-
-| Model | Accuracy | ROC-AUC |
-|--------|---------:|--------:|
-| Logistic Regression | 66.5% | 0.662 |
-| Decision Tree | 64.0% | 0.562 |
-| **Random Forest** | **74.5%** | **0.747** |
-
-### Best Model
-
-The **Random Forest Classifier** achieved the highest performance.
-
-- Accuracy: **74.5%**
-- ROC-AUC: **0.747**
-
-Therefore, Random Forest was selected as the final model.
-
----
-
-## Feature Importance
-
-The Random Forest model identified the following as the most influential features:
-
-1. Credit Amount
-2. Age
-3. Loan Duration
-4. Checking Account
-5. Loan Purpose
-6. Saving Accounts
-7. Job
-8. Housing
-9. Sex
-
----
-
-## Business Insights
-
-Key findings include:
-
-- Customers with larger loan amounts generally present higher credit risk.
-- Longer loan durations are associated with increased lending risk.
-- Customers with stronger savings and checking account balances tend to have better credit profiles.
-- Housing status provides useful information for assessing financial stability.
-- Loan purpose influences repayment risk.
-
----
-
-## Technologies Used
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
 - NumPy
-- Matplotlib
 - Scikit-learn
-- Google Colab
+- Matplotlib
+- Seaborn
+- Joblib
+- Streamlit
 - GitHub
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
-```
+```text
 credit-risk-prediction-ml/
 │
 ├── app/
-├── data/
-│   └── raw/
-├── images/
+│   └── app.py
+│
 ├── models/
+│   ├── credit_risk_random_forest.pkl
+│   └── label_encoders.pkl
+│
+├── images/
+├── data/
 ├── notebooks/
 ├── reports/
 ├── src/
@@ -230,33 +85,38 @@ credit-risk-prediction-ml/
 
 ---
 
-## Future Improvements
+## ▶️ Running Locally
 
-Future versions of this project may include:
+Clone the repository:
 
-- Hyperparameter tuning
-- XGBoost and LightGBM models
-- Model deployment using Streamlit
-- SHAP model explainability
-- Interactive dashboard using Power BI
-- REST API deployment with Flask or FastAPI
+```bash
+git clone https://github.com/vojwang/credit-risk-prediction-ml.git
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app/app.py
+```
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 **Victor Ojwang**
 
-Aspiring Financial Data Scientist specializing in:
+GitHub: https://github.com/vojwang
 
-- Credit Risk Analytics
-- Machine Learning
-- Fraud Detection
-- Financial Analytics
-- Business Intelligence
+LinkedIn: www.linkedin.com/in/victor-ojwang-63116626a
 
 ---
 
-## License
+## ⭐ Support
 
-This project is intended for educational and portfolio purposes.
+If you found this project useful, please consider giving it a ⭐ on GitHub.
