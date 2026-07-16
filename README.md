@@ -1,4 +1,9 @@
 # Credit Risk Prediction Using Machine Learning
+## 🚀 Live Demo
+
+**Try the application here:**
+
+https://vojwang-credit-risk-prediction.streamlit.app/
 
 ## Project Overview
 
